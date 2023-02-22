@@ -29,10 +29,10 @@ namespace Worker
 
                 Thread.Sleep(2000);
 
-                //channel.BasicAck(deliveryTag: data.DeliveryTag, multiple: false);
+                channel.BasicAck(deliveryTag: data.DeliveryTag, multiple: false);
             };
 
-            channel.BasicConsume(queue: "competing_consumer_pattern", autoAck: true, consumer: consumer);
+            channel.BasicConsume(queue: "competing_consumer_pattern", autoAck: false, consumer: consumer);
 
             Console.WriteLine(" Press [enter] to exit.");
             Console.ReadLine();
