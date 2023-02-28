@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EmitLogDirect": {
+      "commandName": "Project",
+      "commandLineArgs": "\"error\" \"Run. Run. Or it will explode.\""
+    }
+  }
+}
