@@ -3,14 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTask", "NewTask\NewTask.csproj", "{0E13EDA3-2F1B-417E-A468-596320C782F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewTask", "NewTask\NewTask.csproj", "{0E13EDA3-2F1B-417E-A468-596320C782F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "Worker\Worker.csproj", "{1A80ACAD-FA8D-4BCB-AD39-809AFD1F791A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Worker", "Worker\Worker.csproj", "{1A80ACAD-FA8D-4BCB-AD39-809AFD1F791A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3B6D3D51-A6A7-49A0-8204-76A1DE440B07}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLogDirect", "EmitLogDirect\EmitLogDirect.csproj", "{E09B5715-8C85-4AA8-8954-677D0E3E5B26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogDirect", "ReceiveLogDirect\ReceiveLogDirect.csproj", "{30D90C7D-EC37-4050-AFFA-293BF01A6A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +30,14 @@ Global
 		{1A80ACAD-FA8D-4BCB-AD39-809AFD1F791A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A80ACAD-FA8D-4BCB-AD39-809AFD1F791A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A80ACAD-FA8D-4BCB-AD39-809AFD1F791A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09B5715-8C85-4AA8-8954-677D0E3E5B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09B5715-8C85-4AA8-8954-677D0E3E5B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09B5715-8C85-4AA8-8954-677D0E3E5B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09B5715-8C85-4AA8-8954-677D0E3E5B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D90C7D-EC37-4050-AFFA-293BF01A6A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D90C7D-EC37-4050-AFFA-293BF01A6A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D90C7D-EC37-4050-AFFA-293BF01A6A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D90C7D-EC37-4050-AFFA-293BF01A6A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

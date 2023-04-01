@@ -17,7 +17,7 @@ namespace NewTask
             var factory = new ConnectionFactory() { HostName = "localhost" };
             using var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
-            channel.QueueDeclare(queue: "competing_consumer_pattern", durable: false, exclusive: false, autoDelete: false, null);
+            channel.QueueDeclare(queue: "competing_consumer_pattern", durable: true, exclusive: false, autoDelete: false, null);
 
             List<string> messages = new List<string>()
             {
@@ -33,8 +33,12 @@ namespace NewTask
 
             foreach (string message in messages)
             {
+                var basicProperties = channel.CreateBasicProperties();
+                basicProperties.Persistent = true;
+
                 var body = Encoding.UTF8.GetBytes(message);
-                channel.BasicPublish(exchange: string.Empty, routingKey: "competing_consumer_pattern", null,
+
+                channel.BasicPublish(exchange: string.Empty, routingKey: "competing_consumer_pattern", basicProperties: basicProperties,
                     body: body);
                 Console.WriteLine($" [x] Sent {message}");
 
